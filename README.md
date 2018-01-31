@@ -7,7 +7,7 @@ This is a webscraper, which can be used to retrieve specific info from a batch o
 #### Installing
 - Make sure Python 3.6 or higher is installed, download this repository and enter the folder from the commandline.
 
-- optionally you can choose to use a virtual environment to create an isolated Python environment. To do so run:
+- optionally you can choose to use a virtual environment to create an isolated Python environment:
     - Install [Virtualenv](https://virtualenv.pypa.io/en/stable/): `pip install virtualenv`
     - Create a new virtual environment named ENV. The -p flag ensures the correct version of Python is used: 
     `virtualenv ENV -p python3`
@@ -20,6 +20,9 @@ Scrapy breaks compatibility you should install the old version with `pip3 instal
 #### Running
 Run `python3 run.py`. If installed correctly, a new window will pop-up. Also, two new directories will be created, 
 namely `results` and `templates`.   
+
+![screenshot.png](https://github.com/NWScraper/nws/blob/master/sample.png?raw=true)
+
 Here you can specify the settings for the crawler. Pressing the `input`-button allows you to select a file with start 
 URL's. The file you'll select should be a TXT-file, containing one web address per line.  
 Using the `template`-button, you can specify which template to use for retrieving information from the sites.
