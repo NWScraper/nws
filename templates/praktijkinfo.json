@@ -1,0 +1,44 @@
+{
+  "_id": "praktijkinfo",
+  "startUrl": ["https://praktijk.praktijkinfo.nl"],
+  "selectors": [
+    {
+      "id": "praktijknaam",
+      "selector": null,
+      "type": "SelectorText"
+    },
+    {
+      "id": "plaatsnaam",
+      "type": "SelectorText",
+      "selector": "address"
+    },
+    {
+      "id": "adres",
+      "type": "SelectorText",
+      "selector": "address"
+    },
+    {
+      "id": "postcode",
+      "selector": "address",
+      "type": "SelectorText"
+    },
+    {
+      "id": "telefoon",
+      "type": "SelectorText",
+      "selector": "span.phone"
+    },
+    {
+      "id": "email",
+      "selector": "address",
+      "type": "SelectorText"
+    },
+    {
+      "id": "website"
+    },
+    {
+      "id": "medewerkers",
+      "selector": "div#nieuwsContainer",
+      "type": "SelectorText"
+    }
+  ]
+}
