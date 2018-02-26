@@ -2,9 +2,13 @@
 
 This is a webscraper, which can be used to retrieve specific info from a batch of websites, using templates.
 
+#### Installing (Windows)
+- Click on `release` in the banner on this page. 
+- Download the latest `release.zip` and unpack it.
+- The directory `app` contains the program and all its dependencies.
+- Double click `app.exe` to begin.
 
-
-#### Installing
+#### Installing from source
 - Make sure Python 3.6 or higher is installed, download this repository and enter the folder from the commandline.
 
 - optionally you can choose to use a virtual environment to create an isolated Python environment:
