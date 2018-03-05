@@ -13,12 +13,12 @@ output_file = "search_url.csv"
 
 
 
-with open(input_file, 'r') as f:  # open input_file
+with open(input_file, 'rb') as f:  # open input_file
     queries = f.readlines()  # split on lines
 
 result = []
 for query in queries:
-    query = query.strip()
+    query = query.decode('utf-8').strip()
     print(query, end=' ')
     sites = []
     srch = search(query, stop=3)
