@@ -20,20 +20,22 @@ print('lines:', len(sites))
 for url in sites:
     url = url.strip()
     if url:
+        code = 200
         if '://' not in url:  # add URL-scheme if missing
             new_url = ''.join(['http://', url])
-        print(n, new_url, end=' ')
+        else:
+            new_url = url
+        print(n, end=' ')
         try:
             req = urllib.request.Request(new_url, headers={
         'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/35.0.1916.47 Safari/537.36'
             })
             res = urllib.request.urlopen(req)
         except Exception as e:
-            res.code = e
-        print(res.code)
+            code = e
         if url == new_url:
             new_url = ''
-        result.append([url, new_url, res.code])
+        result.append([url, new_url, code])
         n += 1
 
 # write to CSV
