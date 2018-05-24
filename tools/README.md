@@ -12,7 +12,7 @@ Make sure this file is placed in the same directory as `check_url.py`.
 1. In IDLE, click `Run > Run module`. Save the file if prompted.
 
 1. After the script is done running, a new file should appear in the same directory, named `check_url.csv`.
-The corresponding HTTP-codes found in the last column can be found here: https://nl.wikipedia.org/wiki/Lijst_van_HTTP-statuscodes
+HTTP-status code 200 means the site is functioning properly, anything else might indicate a problem.
 
 
 ## search_url.py
