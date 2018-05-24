@@ -38,9 +38,8 @@ for url in sites:
         except urllib.error.HTTPError as e:
             status = e.code
         except urllib.error.URLError as e:
-            status = res.reason
-        except Exception as e:
-            status = e
+            status = e.reason
+
 
         print(status)
         result.append([url, new_url, status])
